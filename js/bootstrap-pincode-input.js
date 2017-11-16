@@ -121,14 +121,13 @@
 						var wrapper = $('<div />').addClass('touchwrapper touch'+this.settings.inputs).appendTo(this._container);
 						var input = $('<input>').attr({'type':'number','pattern': "[0-9]*", 'placeholder':touchplaceholders, 'inputmode':"numeric",'maxlength':this.settings.inputs,'autocomplete':'off'}).addClass('form-control pincode-input-text').appendTo(wrapper);
 		        		
-						var touchtable = $('<table>').addClass('touchtable').appendTo(wrapper);
-						var row = $('<tr/>').appendTo(touchtable);
+						var touchtable = $('<div>').addClass('pincode-touch').appendTo(wrapper);
 						// create touch background elements (for showing user how many digits must be entered)
 						for (var i = 0; i <  this.settings.inputs; i++) {
 							if(i == (this.settings.inputs-1)){
-								$('<td/>').addClass('last').appendTo(row);
+                $('<div>').addClass('pincode-touch-digit last').appendTo(touchtable);
 							}else{
-								$('<td/>').appendTo(row);
+                $('<div>').addClass('pincode-touch-digit').appendTo(touchtable);
 							}							
 						}						
 						if(this.settings.hidedigits){
