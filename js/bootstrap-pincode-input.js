@@ -196,10 +196,12 @@
 		         	this.updateOriginalInput();
 				},
 				_isTouchDevice:function(){
+					// Force a no-touch variation to see how it behaves nowadays.
+					return false;
 					// I know, sniffing is a really bad idea, but it works 99% of the times
-					if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-					 	return true;
-					}
+					// if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+					//  	return true;
+					// }
 				},
 				_addEventsToInput:function(input,inputnumber){
 
