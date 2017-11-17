@@ -119,7 +119,7 @@
 						// With CSS letter-spacing we try to put every digit visually insize each table cell.
 						
 						var wrapper = $('<div />').addClass('touchwrapper touch'+this.settings.inputs).appendTo(this._container);
-						var input = $('<input>').attr({'type':'number','pattern': "[0-9]*", 'placeholder':touchplaceholders, 'inputmode':"numeric",'maxlength':this.settings.inputs,'autocomplete':'off'}).addClass('form-control pincode-input-text').appendTo(wrapper);
+						var input = $('<input>').attr({'type':'tel','pattern': "[0-9]*", 'placeholder':touchplaceholders, 'inputmode':"numeric",'maxlength':this.settings.inputs,'autocomplete':'off'}).addClass('form-control pincode-input-text').appendTo(wrapper);
 		        		
 						var touchtable = $('<div>').addClass('pincode-touch').appendTo(wrapper);
 						// create touch background elements (for showing user how many digits must be entered)
