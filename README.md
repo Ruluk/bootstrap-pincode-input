@@ -9,7 +9,7 @@ After entering a pincode the value will be updated in the original textbox.
 It supports a callback after all digits are entered and backspace is allowed.
 See Usage below this page to find out all parameters
 
-For touch devices there will be only one input tag created. Behind it there will be a structure of <divs> ready for you to style.
+For touch devices there will be only one input tag created. Behind it there will be a structure of `&lt;divs&gt;` ready for you to style.
 
 
 # Demo
