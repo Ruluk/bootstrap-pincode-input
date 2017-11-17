@@ -1,13 +1,15 @@
 # Bootstrap pincode-input
 Bootstrap jQuery widget for x-digit pincode input
 
+**Warning: This is a fork with custom changes. Keep it in mind!**
+
 You only need a &lt;input type="text"&gt; and Bootstrap.
 
 After entering a pincode the value will be updated in the original textbox.
 It supports a callback after all digits are entered and backspace is allowed.
 See Usage below this page to find out all parameters
 
-For touch devices there will be only one input tag created. With the supplied CSS it will look like the user is inputting a code in multiple input boxes.
+For touch devices there will be only one input tag created. Behind it there will be a structure of <divs> ready for you to style.
 
 
 # Demo
